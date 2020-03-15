@@ -70,5 +70,12 @@ public class load  {
         return psw_list.get(x).toString();
     }
 
+    public void add_to_logins(String login_atl){
+        log_list.add(login_atl);
+    }
+
+    public void add_to_passwords(String psw_atp){
+        psw_list.add(psw_atp);
+    }
 }
 

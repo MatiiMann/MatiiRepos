@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane fx:id="split_pane" dividerPositions="0.40635451505016723" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<SplitPane fx:id="split_pane" dividerPositions="0.40635451505016723, 0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <items>
     <AnchorPane fx:id="left_pane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
@@ -50,6 +50,11 @@
                         <Insets left="60.0" top="20.0" />
                      </VBox.margin>
                   </Button>
+                  <Label fx:id="error_log" textFill="RED">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
                   <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@matii_logo.png" />
@@ -110,6 +115,12 @@
                   <Font size="40.0" />
                </font>
             </Label>
+            <Label fx:id="error_reg" textFill="RED" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="350.0" />
          </children></AnchorPane>
+      <AnchorPane fx:id="pane" prefHeight="200.0" prefWidth="200.0">
+         <padding>
+            <Insets left="600.0" />
+         </padding>
+      </AnchorPane>
   </items>
 </SplitPane>
